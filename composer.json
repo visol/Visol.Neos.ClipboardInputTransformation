@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "visol/neos-inputsubstitution",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Visol\\Neos\\InputSubstitution\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Visol.Neos.InputSubstitution"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          'Visol.Neos.InputSubstitution':
+            resource: resource://Visol.Neos.InputSubstitution/Public/NeosUserInterface/Plugin.js
