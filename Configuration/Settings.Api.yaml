@@ -1,0 +1,10 @@
+Neos:
+  Neos:
+    Ui:
+      frontendConfiguration:
+        "Visol.Neos.InputSubstitution":
+          replacements:
+            - search: "\u2029"
+              replace: ""
+            - search: "\u2028"
+              replace: ""
