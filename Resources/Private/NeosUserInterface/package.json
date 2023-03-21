@@ -10,6 +10,6 @@
   "dependencies": {
     "@neos-project/neos-ui-extensibility": "8.3.0-beta3",
     "esbuild": "^0.17.00",
-    "@ckeditor/ckeditor5-engine": "^16.0"
+    "@ckeditor/ckeditor5-engine": "^27.0"
   }
 }
