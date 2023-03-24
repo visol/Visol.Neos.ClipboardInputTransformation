@@ -1,15 +1,13 @@
 import manifest from "@neos-project/neos-ui-extensibility";
 import { createClipboardInputTransformationPlugin } from "./ClipboardInputTransformationPlugin";
 
-const addPlugin = (Plugin) => (ckEditorConfiguration, options) => {
-    return {
-        ...ckEditorConfiguration,
-        plugins: [
-            ...(ckEditorConfiguration.plugins ?? []),
-            Plugin
-        ]
-    };
-};
+const addPlugin = (Plugin) => (ckEditorConfiguration, options) => ({
+    ...ckEditorConfiguration,
+    plugins: [
+        ...(ckEditorConfiguration.plugins ?? []),
+        Plugin
+    ]
+})
 
 manifest('Visol.Neos.ClipboardInputTransformation', {}, (globalRegistry, { frontendConfiguration }) => {
     const ckEditorRegistry = globalRegistry.get('ckEditor5');

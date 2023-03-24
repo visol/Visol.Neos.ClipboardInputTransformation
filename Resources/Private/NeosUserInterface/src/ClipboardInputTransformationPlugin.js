@@ -1,10 +1,12 @@
 
 const setTextOfElement = (textElement, newText) => {
     // todo use `UpcastWriter.createText` and `UpcastWriter.replace` but we cant get ahold of the writer until: https://github.com/neos/neos-ui/issues/3436
+    // fyi when ckeditor is updated, this property will become private one could use `_data` instead
     textElement._textData = newText
 }
 
 const traverseTextElements = (element, textElementVisitor) => {
+    // fyi when ckeditor is updated, this is deprecated and will change to "$text"
     if (element.is("text")) {
         textElementVisitor(element)
         return
