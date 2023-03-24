@@ -1,18 +1,13 @@
 {
-    "description": "",
+    "description": "Define a map of search and replacement strings, which are transformed when pasting content into the rich-text editor",
     "type": "neos-package",
-    "name": "visol/neos-inputsubstitution",
+    "name": "visol/neos-clipboardinputtransformation",
     "require": {
-        "neos/flow": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Visol\\Neos\\InputSubstitution\\": "Classes/"
-        }
+        "neos/neos-ui": "^7.3 || ^8.0"
     },
     "extra": {
         "neos": {
-            "package-key": "Visol.Neos.InputSubstitution"
+            "package-key": "Visol.Neos.ClipboardInputTransformation"
         }
     }
 }

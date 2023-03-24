@@ -2,9 +2,10 @@ Neos:
   Neos:
     Ui:
       frontendConfiguration:
-        "Visol.Neos.InputSubstitution":
+        "Visol.Neos.ClipboardInputTransformation":
           replacements:
-            - search: "\u2029"
-              replace: ""
-            - search: "\u2028"
-              replace: ""
+          # for example replace LSEP and PSEP unicode chars
+          #  - search: "\u2029"
+          #    replace: ""
+          #  - search: "\u2028"
+          #    replace: ""
